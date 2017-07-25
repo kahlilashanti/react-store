@@ -4,33 +4,33 @@
   leave
   appear Must set transitionAppear={true} on animation component
 */
-/* for the order items*/
+
 .order-enter
   transition all 0.5s
   transform translateX(-120%)
   max-height 0
   padding 0 !important
   &.order-enter-active
-    max-height 60px
+    max-height: 60px
     padding 2rem 0 !important
-    transform translateX(0);
+    transform translateX(0)
 
 
 .order-leave
   transition all 0.5s
   transform translateX(0)
-    &.order-leave-active
-      transform translateX(120%)
-      max-height 0
-      padding 0
-  /* for the order items*/
+  &.order-leave-active
+    transform translateX(120%)
+    max-height 0
+    padding 0
 
-  /* for the order qty*/
+
+
 
 .count-enter
   transition all .25s
   transform translateY(100%)
-    &.count-enter-active
+  &.count-enter-active
     transform translateY(0)
 
 .count-leave
@@ -41,8 +41,3 @@
   transform translateY(0)
   &.count-leave-active
     transform translateY(-100%)
-
-
-
-
-  /* for the order qty*/
